@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Case sensitive</h2>
+
+    <p>Try to change lastName to lastname</p>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        let lastName, lastname;
+        lastName = "singh";
+        lastname = "prachi";
+        document.getElementById("demo").innerHTML = lastName;
+        document.getElementById("demo2").innerHTML = lastname;
+
+    </script>
+</body>
+</html>
+
+<!-- JavaScript case-sensitive language hai, 
+iska matlab hai ki variable names me uppercase aur lowercase letters ka farak hota hai.
+ Isliye, lastName aur lastname do alag variables hain. -->
