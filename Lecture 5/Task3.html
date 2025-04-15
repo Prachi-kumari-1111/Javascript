@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document</title>
+</head>
+<body>
+  <h1>Task 3: Identifier Rules and Errors</h1>
+  <div id="output"></div>
+  <div id="output2"></div>
+  <div id="output3"></div>
+  
+  <script>
+    let firstName = "Prachi"; // Starts with a letter
+    let last_name = "Singh"; // Uses an underscore
+    let $age = 19; // Starts with a dollar sign
+
+    // Invalid Identifier
+    // let 1stName = "Error"; // this will throw an error
+        document.getElementById("output").innerHTML = firstName;
+        document.getElementById("output2").innerHTML = last_name;
+        document.getElementById("output3").innerHTML = $age;
+  </script>
+</body>
+</html>
