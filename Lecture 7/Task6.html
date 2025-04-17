@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Task:6 (SUBTRACT FUNCTION)</h1>
+
+<p>Write a function safe subtract (a,b) that safely subtract two values ,returning 0 if either value is not a number.</p>
+<script>
+    function SafeSubtract(a, b) {
+        if (typeof a !== 'number' , typeof b !== 'number') {
+            return 0; 
+        }
+        return a - b; 
+    }
+    
+    let result = SafeSubtract(8,4); 
+    console.log(result);
+    
+    result = SafeSubtract(5,"hello"); 
+    console.log(result);
+    </script>
+</body>
+</html>
