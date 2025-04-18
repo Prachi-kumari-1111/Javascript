@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+        
+ function calculateExponent(base, exponent) 
+ {
+ return base ** exponent;
+ }
+
+let base = 3;      
+let exponent = 4; 
+let result = calculateExponent(base, exponent);
+
+document.getElementById("demo").innerHTML = "Result of base 3 raised to the power of exponent 4 is: "+ result;
+</script>
+</body>
+</html>
