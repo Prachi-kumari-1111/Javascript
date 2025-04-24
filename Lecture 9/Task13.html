@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function isEligible(employed, salary, hasCosigner) {
+  
+return (employed && salary > 30000) || hasCosigner;
+}
+
+// Examples
+console.log(isEligible(true, 40000, false)); 
+console.log(isEligible(false, 20000, true)); 
+console.log(isEligible(false, 25000, true)); 
+console.log(isEligible(true, 25000, false));
+
+    </script>
+</body>
+</html>
