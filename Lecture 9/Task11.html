@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+function canAccessRoom(hasKey, knowsCode, systemOff) {
+
+return (hasKey || knowsCode) && systemOff;
+
+}
+
+console.log(canAccessRoom(true, false, true)); // Output: true
+console.log(canAccessRoom(false, true, true)); // Output: true
+console.log(canAccessRoom(true, true, false)); // Output: false
+console.log(canAccessRoom(false, false, false)); // Output: false
+
+</script>
+</body>
+</html>
