@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Area & Perimeter</title>
+</head>
+<body>
+
+    <h2>Rectangle Properties</h2>
+    <p>Click the button to calculate the area and perimeter</p>
+    <button onclick="calculateRectangle()">Calculate</button>
+    <p id="output"></p>
+
+    <script>
+        // Function to create a rectangle object
+        function createRectangle(width, height) {
+            return {
+                width: width,
+                height: height,
+                area: function() {
+                    return this.width * this.height;
+                },
+                perimeter: function() {
+                    return 2 * (this.width + this.height);
+                }
+            };
+        }
+
+        function calculateRectangle() {
+            let rect = createRectangle(10, 5); // Creating rectangle object
+            let result = "Width: " + rect.width + "<br>Height: " + rect.height + 
+                         "<br>Area: " + rect.area() + "<br>Perimeter: " + rect.perimeter();
+            document.getElementById("output").innerHTML = result; // Display result
+        }
+    </script>
+
+</body>
+</html>
