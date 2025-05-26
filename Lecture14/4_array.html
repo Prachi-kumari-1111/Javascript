@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reading Status</title>
+</head>
+<body>
+
+    <h2>Books Reading Status</h2>
+    <p>Click the button to see the reading status of each book</p>
+    <button onclick="displayReadingStatus()">Show Reading Status</button>
+    <p id="output"></p>
+
+    <script>
+        // Array of book objects
+        let books = [
+            { title: "The Merchant of Venice", author: "William sheksphare", readingStatus: true },
+            { title: "Atomic Habits", author: "James Clear", readingStatus: false },
+            { title: "The Tempest", author: "William sheksphare", readingStatus: true }
+        ];
+
+        function displayReadingStatus() {
+            let result = ""; 
+            books.forEach(book => {
+                result += `${book.title} by ${book.author}: ${book.readingStatus ? "Read" : "Not Read"}<br>`;
+            });
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>
